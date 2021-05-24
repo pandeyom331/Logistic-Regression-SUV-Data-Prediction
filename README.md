@@ -19,8 +19,8 @@ Analysing missing values with help of heat map
 from sklearn.metrics import confusion_matrix
 confusion_matrix(y_test,predictions)
 
-array([[65,  7],
-       [14, 34]], dtype=int64)
+array([[65,  3],
+       [ 8, 24]], dtype=int64)
        
 ## Accuracy
 
@@ -28,12 +28,12 @@ from sklearn.metrics import accuracy_score
 
 accuracy_score(y_test, predictions)*100
 
-82.5
+89.0
 
 Accuracy: Overall, how often is the classifier correct?
-(TP+TN)/total = (65+34)/120 = 0.82
+(TP+TN)/total = (65+24)/100 = 0.89
 
 ## Misclassification rate
-mis_cla_rate  = (21)/len(y_test)
+mis_cla_rate  = (11)/len(y_test)
 
-0.175
+0.11
